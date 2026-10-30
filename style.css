@@ -1,0 +1,71 @@
+/* 5.4 :root variables - saare colours ek jagah */
+:root {
+    --primary: #1e40af;
+    --secondary: #3b82f6;
+    --accent: #f59e0b;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text: #0f172a;
+}
+
+/* 5.3 Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* 5.2 1st selector: * */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 5.2 2nd selector: h1 element */
+h1 {
+    font-size: 32px;
+    color: var(--primary);
+}
+
+/* 5.2 3rd selector: #hero id */
+#hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 5.2 4th selector: .card class */
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent);
+}
+
+/* Extra styling for table/form */
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid black; padding: 10px; }
+thead { background: var(--primary); color: white; }
+tfoot { background: #eff6ff; font-weight: bold; }
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
+button { background: var(--primary); color: white; border: none; cursor: pointer; }
