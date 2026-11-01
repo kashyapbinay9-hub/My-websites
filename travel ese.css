@@ -1,10 +1,10 @@
 .body{
     background-color: antiquewhite;
 }
-section{
+.hero{
     background-color:aquamarine;
-    margin: 0%; 
-text-align: center;
+    margin: 10px; 
+    text-align: center;
 
 }
 nav{
@@ -17,8 +17,13 @@ nav{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .box{
      border: solid 2px brown;
-     padding: 20px 40px;
+     padding: 2px 20px;
+     border-radius:10px ;
+     box-sizing: auto;
+     margin: 10px;
+
 }
